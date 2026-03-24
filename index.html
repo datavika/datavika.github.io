@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="DataVika — Data science training & consulting by Devika M. Python, SQL, Power BI, ML, Deep Learning, NLP. 1:1 mentoring, real projects, English & Malayalam. Kerala, India."/>
+<meta name="keywords" content="data science training Kerala, Python course Kerala, machine learning course Kerala, Power BI training Kerala, SQL course Kerala, data analyst course Kerala, Devika M DataVika, data science Malayalam"/>
+<meta name="author" content="Devika M — DataVika"/>
+<meta name="robots" content="index, follow"/>
+<meta property="og:title" content="DataVika — Find Your Direction in Data."/>
+<meta property="og:description" content="Real projects from Day 1. 1:1 personalised mentoring. Python, SQL, ML, Power BI, NLP. English & Malayalam. Kerala, India."/>
+<meta property="og:url" content="https://datavika.github.io/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://datavika.github.io/assets/images/logo.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="https://datavika.github.io/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"EducationalOrganization","name":"DataVika","description":"Data science training and consulting by Devika M","url":"https://datavika.github.io","telephone":"+919048319556","email":"datavika2025@gmail.com","address":{"@type":"PostalAddress","addressRegion":"Kerala","addressCountry":"IN"},"founder":{"@type":"Person","name":"Devika M"}}</script>
+<title>DataVika — Find Your Direction in Data.</title>
+<link rel="stylesheet" href="css/styles.css"/>
+<link rel="icon" href="assets/images/favicon.png" type="image/png"/>
+<script id="hicons-global">
+const HICONS = {
+  "python": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"/></svg>`,
+  "sql": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/></svg>`,
+  "excel": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.375 19.5h17.25m-17.25 0a1.125 1.125 0 01-1.125-1.125M3.375 19.5h1.5C5.496 19.5 6 18.996 6 18.375m-3.75 0V5.625m0 12.75v-1.5c0-.621.504-1.125 1.125-1.125m18.375 2.625V5.625m0 12.75c0 .621-.504 1.125-1.125 1.125h-1.5m-15.75 0h16.5M3.375 5.625c0-.621.504-1.125 1.125-1.125h15c.621 0 1.125.504 1.125 1.125m-17.25 0v1.5c0 .621.504 1.125 1.125 1.125m0 0h1.5m-1.5 0c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125m1.5-3.75C7.496 8.25 8 8.754 8 9.375v1.5c0 .621-.504 1.125-1.125 1.125M6.75 8.25h.75m-1.5 3.75h1.5m12-3.75h.75m-1.5 3.75h1.5"/></svg>`,
+  "powerbi": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>`,
+  "stats": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 14.25v2.25m3-4.5v4.5m3-6.75v6.75m3-9v9M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/></svg>`,
+  "da": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>`,
+  "ml": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/></svg>`,
+  "dl": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>`,
+  "nlp": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg>`,
+  "ip": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>`,
+  "aitools": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/></svg>`,
+  "students": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>`,
+  "projects": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"/></svg>`,
+  "toolsic": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg>`,
+  "globe": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253M3.284 14.253A8.959 8.959 0 013 12c0-1.496.364-2.907 1.007-4.155"/></svg>`,
+  "user1on1": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>`,
+  "mappin": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>`,
+  "video": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/></svg>`,
+  "mapicon": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>`,
+  "codeicon": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>`,
+  "checkcirc": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`,
+  "bookopen": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>`,
+  "magnify": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803a7.5 7.5 0 0010.607 0z"/></svg>`,
+  "squares": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"/></svg>`,
+  "micicon": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"/></svg>`,
+  "codesquare": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 9.75L16.5 12l-2.25 2.25m-4.5 0L7.5 12l2.25-2.25M6 20.25h12A2.25 2.25 0 0020.25 18V6A2.25 2.25 0 0018 3.75H6A2.25 2.25 0 003.75 6v12A2.25 2.25 0 006 20.25z"/></svg>`,
+  "target": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"/></svg>`,
+  "sparkles": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/></svg>`,
+  "bookself": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>`,
+  "arrowpath": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/></svg>`,
+  "chatbubble": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>`,
+  "vidrecord": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M12 18.75H4.5a2.25 2.25 0 01-2.25-2.25V9m12.841 9.091L16.5 19.5m-1.409-1.409c.407-.407.659-.97.659-1.591v-9a2.25 2.25 0 00-2.25-2.25h-9c-.621 0-1.184.252-1.591.659m12.182 12.182L2.909 5.909M1.5 4.5l1.409 1.409"/></svg>`,
+  "document": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>`,
+  "briefcase": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"/></svg>`,
+  "rocket": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/></svg>`,
+  "trophy": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"/></svg>`,
+  "chartbar": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>`,
+  "lightning": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>`,
+  "lightbulb": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>`,
+  "trendingup": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"/></svg>`,
+  "users": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>`,
+  "search": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803a7.5 7.5 0 0010.607 0z"/></svg>`,
+  "moon": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/></svg>`,
+  "sun": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>`,
+  "star": `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"/></svg>`,
+  "thumb": `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.729c.06.054.115.11.163.164M5.904 18.729a4.5 4.5 0 01-2.652-4.799A4.5 4.5 0 016 9.75v8.25a.75.75 0 01-.096.979z"/></svg>`
+};
+function hicon(key, size, color) {
+  size = size || 22; color = color || 'currentColor';
+  const svg = HICONS[key]; if (!svg) return '';
+  return '<span style="display:inline-flex;align-items:center;width:'+size+'px;height:'+size+'px;flex-shrink:0">'+
+    svg.replace(/stroke="currentColor"/g,'stroke="'+color+'"')
+       .replace(/fill="currentColor"/g,'fill="'+color+'"')+'</span>';
+}
+</script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="nav">
+  <div class="container">
+    <div class="nav-wrap">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/images/logo.png" alt="DataVika" id="nav-logo-img" onerror="this.style.display='none';document.getElementById('nav-fb-text').style.display='block'"/>
+        <span class="nav-fb" id="nav-fb-text" style="display:none">Data<span>Vika</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#syllabus">Syllabus</a></li>
+        <li><a href="#packs">Packs</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#uday">Uday Batch</a></li>
+        <li><a href="#consulting">Consulting</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#events">Events</a></li>
+      </ul>
+      <div class="nav-r">
+        <a href="#contact" class="btn btn-p">Book Free Demo</a>
+      </div>
+      <button class="ham" id="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+<div id="mob-menu">
+  <button class="mob-x" id="mob-close">✕</button>
+  <a href="#about">About</a><a href="#courses">Courses</a>
+  <a href="#syllabus">Syllabus</a><a href="#packs">Packs</a>
+  <a href="#pricing">Pricing</a><a href="#resources">Resources</a>
+  <a href="#events">Events</a><a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-p" style="margin-top:8px">Book Free Demo</a>
+</div>
+
+<!-- HERO -->
+<section id="hero" style="background:var(--bg)">
+  <canvas class="bg-canvas" id="bg-hero"></canvas>
+  <canvas id="particles-canvas" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.3" aria-hidden="true"></canvas>
+  <div class="container rel">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span>Kerala · Data Science · Training & Consulting</div>
+        <h1 style="margin-bottom:8px">Don't Just Learn Data.</h1>
+        <h1 style="margin-bottom:16px;font-weight:700"><span style="color:rgba(240,244,255,.82)">Get </span><span style="color:var(--t1)">Hired</span><span style="color:rgba(240,244,255,.4)"> With It.</span></h1>
+        <div id="rotating-sub" style="min-height:26px;margin-bottom:16px;font-size:.88rem;color:var(--t3);font-style:italic;transition:opacity .5s"></div>
+        <p class="hero-desc">Most institutes dump theory on you. DataVika puts you inside <strong>real projects from Day 1</strong> — affordable fees, your schedule, your syllabus, in <strong>English & Malayalam.</strong></p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn btn-p" style="font-size:.95rem;padding:13px 28px">Book a Free Demo Session</a>
+          <a href="#courses" class="btn btn-g">Explore Courses →</a>
+        </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:20px;padding:10px 16px;background:rgba(57,211,83,.06);border:1px solid rgba(57,211,83,.14);border-radius:10px;width:fit-content">
+          <span style="width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0"></span>
+          <span style="font-size:.78rem;color:var(--t2)">Limited to <strong style="color:var(--green)">15 students</strong> per batch · Concentrated, personalised learning</span>
+        </div>
+        <div class="hero-stats" id="hero-stats"></div>
+      </div>
+      <div class="hero-r" aria-hidden="true">
+        <div class="hcard" style="position:relative">
+          <div class="pill-t float-pill">85%+ Model Recall</div>
+          <div class="hcard-l">Student Project — Churn Prediction</div>
+          <div class="mini-bars">
+            <div class="mbar"></div><div class="mbar"></div><div class="mbar"></div>
+            <div class="mbar"></div><div class="mbar"></div><div class="mbar"></div>
+            <div class="mbar"></div><div class="mbar"></div><div class="mbar"></div><div class="mbar"></div>
+          </div>
+        </div>
+        <div class="hcard">
+          <div class="hcard-l">Live session — real code</div>
+          <div class="code-s">
+            <span class="kw">from</span> sklearn <span class="kw">import</span> XGBClassifier<br>
+            <span class="kw">import</span> pandas <span class="kw">as</span> pd<br><br>
+            df = pd.read_csv(<span class="st">'sales_data.csv'</span>)<br>
+            <span id="typer"></span><span class="cursor"></span>
+          </div>
+        </div>
+        <div class="hcard">
+          <div class="hcard-l">Tools you will master</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:4px">
+            <span class="pill-t">Python</span><span class="pill-t">SQL</span>
+            <span class="pill-t">Excel</span><span class="pill-t">Power BI</span>
+            <span class="pill-t">ML</span><span class="pill-t">AI Tools</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap"><div class="marquee-track" id="marquee-track"></div></div>
+
+<!-- STATS -->
+<section id="stats-strip" style="background:var(--bg2)">
+  <canvas class="bg-canvas" id="bg-stats"></canvas>
+  <div class="container rel"><div class="stats-row" id="stats-row"></div></div>
+</section>
+
+<!-- PROBLEM -->
+<section id="problem" class="section" style="background:#0f0f0f">
+  <canvas class="bg-canvas" id="bg-problem"></canvas>
+  <div class="container rel">
+    <div class="prob-grid">
+      <div class="reveal-l">
+        <div class="label" style="color:var(--tensionT);border-color:rgba(255,70,60,.22)">The Placement Crisis</div>
+        <h2 style="margin-bottom:16px">Why Are Data Grads<br>Still Unemployed?</h2>
+        <p style="margin-bottom:28px">Institutions teach <em>hundreds</em> of concepts. Recruiters want one thing: <strong style="color:var(--t1)">can you solve real problems with data?</strong></p>
+        <div id="prob-list"></div>
+      </div>
+      <div class="reveal-r">
+        <div class="sol-box">
+          <div class="label" style="margin-bottom:20px">DataVika Fixes This</div>
+          <div class="sol-row"><span class="sol-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"/></svg></span></span><div><h4>Project-First Learning</h4><p>Every concept taught through a real dataset from Day 1.</p></div></div>
+          <div class="sol-row"><span class="sol-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33"/></svg></span></span><div><h4>Custom Syllabus</h4><p>Built around your level and target role. Zero wasted sessions.</p></div></div>
+          <div class="sol-row"><span class="sol-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/><path stroke-linecap="round" stroke-linejoin="round" d=""/></svg></span></span><div><h4>Max 15 Students Per Batch</h4><p>Concentrated, personalised learning — not a lecture hall.</p></div></div>
+          <div class="sol-row"><span class="sol-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"/></svg></span></span><div><h4>English + Malayalam</h4><p>Learn in the language you think in.</p></div></div>
+          <a href="#contact" class="btn btn-p" style="width:100%;justify-content:center;margin-top:8px">Start With a Free Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="section" style="background:var(--bg2)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="label">How It Works</div>
+      <h2>From <span class="hl">First Click</span> to First Job</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px" id="how-steps"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section" style="background:var(--bg)">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal-l">
+        <div class="about-photo">
+          <span style="font-size:6rem;filter:drop-shadow(0 0 20px rgba(57,211,83,.2))"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg></span>
+          <div class="about-photo-tag">Devika M · Founder, DataVika · Kerala, India</div>
+        </div>
+        <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:6px">
+          <a href="mailto:datavika2025@gmail.com" class="contact-link">Email</a>
+          <a href="https://wa.me/919048319556" class="contact-link" target="_blank">WhatsApp</a>
+          <a href="https://chat.whatsapp.com/Jvf40wFUenE70ZaHDH6Gwb" class="contact-link" target="_blank" style="color:var(--green);border-color:rgba(57,211,83,.25)">Community</a>
+          <a href="https://linkedin.com/in/devika-m" class="contact-link" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+      <div class="reveal-r">
+        <div class="label">About</div>
+        <h2 style="margin-bottom:6px">Meet <span class="hl">Devika M</span></h2>
+        <p style="color:var(--t3);margin-bottom:20px;font-family:var(--font-d);font-size:.82rem;font-weight:500">Data Scientist · Trainer · Consultant · Founder, DataVika</p>
+        <p style="margin-bottom:14px;line-height:1.8">I am Devika — a data scientist and trainer from Kerala. Having worked in the industry and trained students directly, I know exactly where learners get stuck and what employers actually look for.</p>
+        <p style="margin-bottom:14px;line-height:1.8">DataVika was built from one frustration: brilliant students who could not get placed because they had never worked on a real project. We fix that by making <strong style="color:var(--t1)">project-first learning</strong> the core of everything we do.</p>
+        <p style="margin-bottom:24px;line-height:1.8;font-size:.88rem;color:var(--t2)">Every session is personal. Every syllabus is custom. Every student builds real projects they can show in interviews. That is the DataVika difference.</p>
+        <h4 style="color:var(--t3);text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;margin-bottom:12px;font-weight:600">Education</h4>
+        <div style="margin-bottom:20px">
+          <div class="cred"><div class="cred-dot"></div><div><div class="cred-deg">Data Science Architect Master Program</div><div class="cred-inst">Intellipaat and Microsoft</div></div></div>
+          <div class="cred"><div class="cred-dot"></div><div><div class="cred-deg">MBA — Human Resource and Marketing</div><div class="cred-inst">Anna University</div></div></div>
+          <div class="cred"><div class="cred-dot"></div><div><div class="cred-deg">B.Sc. Computer Science</div><div class="cred-inst">University of Calicut</div></div></div>
+        </div>
+        <div>
+          <span class="skill-tag">Microsoft Power BI Certified</span><span class="skill-tag">Transact-SQL Certified</span>
+          <span class="skill-tag">Python · Pandas · NumPy</span><span class="skill-tag">scikit-learn · XGBoost</span>
+          <span class="skill-tag">TensorFlow · Keras</span><span class="skill-tag">NLP · Transformers</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP COMMUNITY -->
+<div style="padding:24px 0;background:var(--bg2)">
+  <div class="container"><div id="whatsapp-community"></div></div>
+</div>
+
+<!-- COURSES -->
+<section id="courses" class="section" style="background:var(--bg)">
+  <canvas class="bg-canvas" id="bg-courses"></canvas>
+  <div class="container rel">
+    <div style="text-align:center;margin-bottom:52px">
+      <div class="label">Courses</div>
+      <h2 style="margin-bottom:12px">Build Your <span class="hl">Perfect Learning Path</span></h2>
+      <p style="max-width:540px;margin:0 auto">Start with one tool or commit to a full track. Every course uses real portfolio-level projects. Bundles include placement prep free.</p>
+    </div>
+
+    <!-- Individual Tools -->
+    <div style="margin-bottom:52px">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:8px">
+        <h3 style="font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.14em;font-family:var(--font-d);font-weight:700;white-space:nowrap">Individual Tool Courses</h3>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+      </div>
+      <p style="font-size:.82rem;color:var(--t3);margin-bottom:20px">Master one skill at a time. Pick exactly what you need.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:10px" id="fee-singles"></div>
+    </div>
+
+    <!-- Bundles -->
+    <div style="margin-bottom:52px">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:8px">
+        <h3 style="font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.14em;font-family:var(--font-d);font-weight:700;white-space:nowrap">Course Bundles</h3>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+        <span style="font-size:.7rem;color:var(--green);white-space:nowrap;font-weight:600">Placement Prep Included</span>
+      </div>
+      <p style="font-size:.82rem;color:var(--t3);margin-bottom:16px">Better value than individual courses. Every bundle includes Mock Interview + Resume + Portfolio free.</p>
+      <div id="placement-prep-rule" style="margin-bottom:20px"></div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px" id="fee-tracks"></div>
+    </div>
+
+    <!-- 1:1 -->
+    <div style="margin-bottom:52px">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
+        <h3 style="font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.14em;font-family:var(--font-d);font-weight:700;white-space:nowrap">1:1 Personalised Sessions</h3>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+      </div>
+      <div id="fee-1on1"></div>
+    </div>
+
+    <!-- Builder -->
+    <div>
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
+        <h3 style="font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.14em;font-family:var(--font-d);font-weight:700;white-space:nowrap">Build a Custom Bundle</h3>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+        <span style="font-size:.7rem;color:var(--t3);white-space:nowrap">Select 3+ tools to unlock placement prep free</span>
+      </div>
+      <div class="builder-wrap">
+        <div>
+          <div class="mods-grid" id="mods-grid"></div>
+        </div>
+        <div class="b-summary">
+          <div style="font-family:var(--font-d);font-size:1rem;font-weight:700;margin-bottom:18px">Your Custom Plan</div>
+          <div id="sum-list" style="min-height:72px;margin-bottom:16px"><div class="sum-empty">Select 3+ modules to unlock placement prep</div></div>
+          <div class="sum-totals">
+            <div class="sum-row"><span style="color:var(--t2)">Duration</span><strong id="sum-dur">—</strong></div>
+            <div class="sum-row" style="margin-top:8px"><span style="color:var(--t2)">Fee</span><strong id="sum-price">Rs.0</strong></div>
+          </div>
+          <div id="placement-unlock" style="display:none;font-size:.72rem;color:var(--green);padding:8px 10px;background:var(--gdim);border-radius:8px;margin-bottom:12px;text-align:center;border:1px solid rgba(57,211,83,.18)">Placement Prep Included FREE with 3+ tools</div>
+          <a id="wa-sum-btn" href="#" class="btn btn-p" style="width:100%;justify-content:center;margin-bottom:10px;font-size:.84rem">Send to Devika on WhatsApp</a>
+          <a href="#contact" class="btn btn-g" style="width:100%;justify-content:center;font-size:.8rem">Or fill contact form</a>
+          <p style="font-size:.68rem;color:var(--t3);text-align:center;margin-top:10px">Fees flexible · Instalments available</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SYLLABUS -->
+<section id="syllabus" class="section" style="background:var(--bg2)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="label">Full Syllabus</div>
+      <h2 style="margin-bottom:12px">Every Topic. Every Week. <span class="hl">No Surprises.</span></h2>
+      <p style="max-width:540px;margin:0 auto">Click any tool to see the complete week-by-week breakdown.</p>
+    </div>
+    <div style="margin-bottom:36px">
+      <div style="display:flex;align-items:center;gap:16px;margin-bottom:16px">
+        <h3 style="font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.14em;font-family:var(--font-d);font-weight:700;white-space:nowrap">Not Sure Where to Start?</h3>
+        <div style="flex:1;height:1px;background:var(--border)"></div>
+        <span style="font-size:.68rem;color:var(--green);font-weight:600;white-space:nowrap">2-min quiz</span>
+      </div>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);overflow:hidden" id="career-quiz"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
+      <h3 style="font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.14em;font-family:var(--font-d);font-weight:700;white-space:nowrap">Complete Syllabus</h3>
+      <div style="flex:1;height:1px;background:var(--border)"></div>
+    </div>
+    <div id="full-syllabus-container"></div>
+    <div style="margin-top:28px;text-align:center;padding:20px 28px;background:var(--gdim);border:1px solid rgba(57,211,83,.18);border-radius:var(--r-xl)">
+      <p style="font-size:.9rem;color:var(--t1);font-weight:600;margin-bottom:4px">Every bundle includes: Mock Interview + Resume Building + Portfolio Website</p>
+      <p style="font-size:.82rem;color:var(--t2)">No extra charge on full tracks. Because learning without placement assistance is essential.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIAL PACKS -->
+<section id="packs" class="section" style="background:var(--bg)">
+  <canvas class="bg-canvas" id="bg-packs"></canvas>
+  <div class="container rel">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="label">Special Packs</div>
+      <h2 style="margin-bottom:12px">Placement Prep <span class="hl">Packs</span></h2>
+      <p style="max-width:580px;margin:0 auto;margin-bottom:20px">Choose any 3-course bundle and get all placement prep <strong style="color:var(--green)">included free</strong>. Or purchase standalone if you already have the technical skills.</p>
+      <div id="packs-strategy-banner"></div>
+    </div>
+    <div id="fee-packs"></div>
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:20px">
+      <h3 style="font-size:.72rem;color:var(--t3);text-transform:uppercase;letter-spacing:.14em;font-family:var(--font-d);font-weight:700;white-space:nowrap">Quick Add-Ons</h3>
+      <div style="flex:1;height:1px;background:var(--border)"></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px" id="fee-addons"></div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section" style="background:var(--bg2);position:relative;overflow:hidden">
+  <canvas class="bg-canvas" id="bg-pricing"></canvas>
+  <div class="container rel">
+    <div style="text-align:center;margin-bottom:40px">
+      <div class="label">Pricing Notes</div>
+      <h2 style="margin-bottom:12px">Transparent. <span class="hl">Flexible.</span> Fair.</h2>
+      <p style="max-width:540px;margin:0 auto;margin-bottom:20px">No hidden fees. Fees are always negotiable. Book a free demo first — pay only when you are convinced DataVika is right for you.</p>
+      <div style="display:inline-flex;gap:16px;flex-wrap:wrap;justify-content:center;padding:12px 20px;background:var(--surface);border:1px solid var(--border);border-radius:50px">
+        <span style="font-size:.78rem;color:var(--t2);display:inline-flex;align-items:center;gap:4px"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg> Instalments available</span>
+        <span style="font-size:.78rem;color:var(--t2);display:inline-flex;align-items:center;gap:4px"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg> Fees negotiable</span>
+        <span style="font-size:.78rem;color:var(--t2);display:inline-flex;align-items:center;gap:4px"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg> Free demo first</span>
+        <span style="font-size:.78rem;color:var(--green);font-weight:600;display:inline-flex;align-items:center;gap:4px"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#F5A623"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clip-rule="evenodd"/></svg> 1:1 — contact us</span>
+      </div>
+    </div>
+    <div style="text-align:center;padding:28px 36px;background:var(--gdim);border:1px solid rgba(57,211,83,.18);border-radius:var(--r-xl)">
+      <h3 style="margin-bottom:8px;font-size:1.05rem">Not sure which plan is right for you?</h3>
+      <p style="font-size:.86rem;color:var(--t2);margin-bottom:6px;max-width:460px;margin-left:auto;margin-right:auto">Book a free 30-minute demo. Devika will recommend the exact right path for you.</p>
+      <p style="font-size:.74rem;color:var(--t3);margin-bottom:18px">All fees negotiable · Instalments available · No one turned away</p>
+      <a href="#contact" class="btn btn-p" style="font-size:.92rem;padding:12px 32px">Book Free Demo — Zero Commitment</a>
+    </div>
+  </div>
+</section>
+
+<!-- UDAY BATCH -->
+<section id="uday" class="section" style="background:var(--bg)">
+  <canvas class="bg-canvas" id="bg-uday"></canvas>
+  <div class="container rel">
+    <div style="background:linear-gradient(135deg,rgba(245,166,35,.07),rgba(245,166,35,.02));border:1px solid rgba(245,166,35,.18);border-radius:var(--r-xl);padding:52px">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start">
+
+        <!-- Left -->
+        <div class="reveal-l">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px">
+            <div class="label label-a">DataVika Uday Batch</div>
+            <span style="font-size:.62rem;font-weight:700;color:#060D06;background:var(--amber);padding:2px 10px;border-radius:50px">Coming Soon</span>
+          </div>
+          <h2 style="margin-bottom:8px">Rising Together.</h2>
+          <p style="color:var(--amber);font-size:1rem;margin-bottom:4px">Scholarship program for passionate learners.</p>
+          <div style="font-family:var(--font-d);font-size:1rem;font-weight:600;line-height:1.6;color:var(--t1);margin:16px 0;padding-left:16px;border-left:2px solid var(--amber)">"Financial background should never stop a motivated student. If you have the passion, DataVika has a path for you."</div>
+          <p style="font-size:.88rem;color:var(--t2);margin-bottom:18px;line-height:1.7">The Uday Batch offers a <strong style="color:var(--amber)">50% fee waiver</strong> for eligible students who demonstrate genuine passion and commitment.</p>
+          <div style="padding:14px 16px;background:rgba(245,166,35,.08);border:1px solid rgba(245,166,35,.18);border-radius:var(--r-lg);margin-bottom:20px;display:inline-block">
+            <div style="font-family:var(--font-d);font-size:1.1rem;font-weight:700;color:var(--amber)">50% off the full course fee</div>
+            <div style="font-size:.76rem;color:rgba(245,166,35,.65);margin-top:2px">For eligible students only · Interview required</div>
+          </div>
+          <br/>
+          <a href="https://chat.whatsapp.com/Jvf40wFUenE70ZaHDH6Gwb" target="_blank" class="btn btn-a">Join Community — Get Notified →</a>
+        </div>
+
+        <!-- Right -->
+        <div class="reveal-r">
+          <h3 style="color:var(--amber);margin-bottom:16px;font-size:.95rem;font-weight:600">Selection Process</h3>
+          <div id="uday-rules"></div>
+          <div style="margin-top:18px;padding:18px 20px;background:rgba(245,166,35,.05);border:1px solid rgba(245,166,35,.14);border-radius:var(--r-lg)">
+            <h4 style="color:var(--amber);margin-bottom:10px;font-size:.86rem;font-weight:600">What Uday Students Receive</h4>
+            <div id="uday-includes"></div>
+          </div>
+          <div style="margin-top:12px;padding:10px 14px;background:rgba(245,166,35,.04);border-radius:var(--r);font-size:.74rem;color:rgba(245,166,35,.5);text-align:center">
+            Applications announced on the DataVika WhatsApp Community
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="section" style="background:var(--bg2)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="label">Student Stories</div>
+      <h2>Real Students. <span class="hl">Real Results.</span></h2>
+    </div>
+    <div class="testi-grid" id="testi-grid"></div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources" class="section" style="background:var(--bg)">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:44px">
+      <div class="label">Free Resources</div>
+      <h2 style="margin-bottom:10px">Study Smarter — <span class="hl">On Us</span></h2>
+      <p style="max-width:480px;margin:0 auto">100% free. No payment required. Real material to help you grow.</p>
+    </div>
+    <div class="res-tabs">
+      <button class="res-tab active" data-tab="quiz">Interview Quiz</button>
+      <button class="res-tab" data-tab="sheets">Cheat Sheets</button>
+      <button class="res-tab" data-tab="projects">Project Ideas</button>
+      <button class="res-tab" data-tab="resume">Resume Tips</button>
+    </div>
+    <div class="res-pane active" id="rp-quiz">
+      <div class="q-bar">
+        <button class="q-btn active" data-q="sql">SQL</button>
+        <button class="q-btn" data-q="python">Python</button>
+        <button class="q-btn" data-q="powerbi">Power BI</button>
+      </div>
+      <div class="quiz-wrap" id="quiz-wrap"></div>
+      <p style="font-size:.76rem;color:var(--t3);margin-top:12px">Score below 80%? <a href="#contact" style="color:var(--green)">Book a brush-up session.</a></p>
+    </div>
+    <div class="res-pane" id="rp-sheets"><div class="sheets-grid" id="sheets-grid"></div></div>
+    <div class="res-pane" id="rp-projects">
+      <div class="proj-grid" id="proj-grid"></div>
+      <div style="text-align:center;margin-top:24px"><a href="#contact" class="btn btn-p">Get Full Project Ideas PDF</a></div>
+    </div>
+    <div class="res-pane" id="rp-resume">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">
+        <div class="card reveal"><h4 style="margin-bottom:8px;color:var(--t1)">1. Lead with Projects</h4><p style="font-size:.84rem">Projects matter more than degrees. List tool, dataset, outcome, and a GitHub link for every project.</p></div>
+        <div class="card reveal d1"><h4 style="margin-bottom:8px;color:var(--t1)">2. Quantify Results</h4><p style="font-size:.84rem">Do not say built a dashboard. Say Built Power BI dashboard reducing reporting time by 60 percent.</p></div>
+        <div class="card reveal d2"><h4 style="margin-bottom:8px;color:var(--t1)">3. GitHub = Your Portfolio</h4><p style="font-size:.84rem">GitHub link on your resume. Every project needs a clean README non-technical people can read.</p></div>
+        <div class="card reveal d3"><h4 style="margin-bottom:8px;color:var(--t1)">4. Keep Skills Honest</h4><p style="font-size:.84rem">Only list tools you can answer interview questions about. Interviewers will ask.</p></div>
+        <div class="card reveal d1"><h4 style="margin-bottom:8px;color:var(--t1)">5. Optimise LinkedIn</h4><p style="font-size:.84rem">Update headline, summary, and featured projects. Recruiters search LinkedIn every day.</p></div>
+        <div class="card reveal d2" style="background:var(--gdim);border-color:rgba(57,211,83,.2);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px">
+          <h4 style="margin-bottom:8px;color:var(--green)">Want a personal resume review?</h4>
+          <p style="font-size:.84rem;margin-bottom:16px">Devika reviews your resume and gives actionable feedback.</p>
+          <a href="#contact" class="btn btn-p" style="font-size:.78rem">Book Resume Review</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events" class="section" style="background:var(--bg2)">
+  <canvas class="bg-canvas" id="bg-events"></canvas>
+  <div class="container rel">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:40px">
+      <div><div class="label">Upcoming</div><h2>Events and <span class="hl">Free Sessions</span></h2></div>
+      <a href="#contact" class="btn btn-g">Register for Any Session</a>
+    </div>
+    <div style="background:rgba(57,211,83,.05);border:1px solid rgba(57,211,83,.14);border-radius:var(--r-xl);padding:28px;text-align:center;margin-bottom:28px">
+      <p style="font-family:var(--font-d);font-size:.68rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--t3);margin-bottom:14px">Next Session Starts In</p>
+      <div class="cd-row" id="countdown"></div>
+    </div>
+    <div id="events-list"></div>
+    <p style="text-align:center;color:var(--t3);font-size:.8rem;margin-top:20px">All sessions via Zoom · Live only · <a href="#contact" style="color:var(--t2)">Request custom timing</a></p>
+  </div>
+</section>
+
+<!-- CONSULTING -->
+<section id="consulting" class="section" style="background:var(--bg2);position:relative;overflow:hidden">
+  <canvas class="bg-canvas" id="bg-consulting"></canvas>
+  <div class="container rel">
+    <div style="text-align:center;margin-bottom:48px">
+      <div class="label">For Businesses</div>
+      <h2 style="margin-bottom:12px">DataVika <span class="hl">Consulting</span></h2>
+      <p style="max-width:520px;margin:0 auto">SMEs and growing businesses in Kerala who need data intelligence at accessible prices. Enterprise-quality work without enterprise fees.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 2fr;gap:40px;align-items:start">
+      <div class="reveal-l">
+        <div style="padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);margin-bottom:20px">
+          <h4 style="font-size:.9rem;color:var(--t1);margin-bottom:10px">Why DataVika Consulting?</h4>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="font-size:.82rem;color:var(--t2);display:flex;gap:8px"><span style="display:inline-flex;align-items:center;color:var(--green)"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>Direct access to Devika — not a team of juniors</div>
+            <div style="font-size:.82rem;color:var(--t2);display:flex;gap:8px"><span style="display:inline-flex;align-items:center;color:var(--green)"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>No agency overhead — lower prices</div>
+            <div style="font-size:.82rem;color:var(--t2);display:flex;gap:8px"><span style="display:inline-flex;align-items:center;color:var(--green)"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>Fast turnaround — 3-7 days typical</div>
+            <div style="font-size:.82rem;color:var(--t2);display:flex;gap:8px"><span style="display:inline-flex;align-items:center;color:var(--green)"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg></span>Kerala SME experience</div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-p" style="width:100%;justify-content:center">Get Free Consultation</a>
+      </div>
+      <div class="reveal-r">
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px" id="consult-grid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section" style="background:var(--bg2)">
+  <canvas class="bg-canvas" id="bg-contact"></canvas>
+  <div class="container rel">
+    <div class="contact-grid">
+      <div class="reveal-l">
+        <div class="label">Get Started</div>
+        <h2 style="margin-bottom:16px">Book Your <span class="hl">Free Demo</span></h2>
+        <p style="margin-bottom:10px;font-size:.9rem;color:var(--t2)">Fill the form. Devika responds within 24 hours. No commitment, no pressure.</p>
+        <div style="padding:14px 16px;background:var(--gdim);border:1px solid rgba(57,211,83,.18);border-radius:var(--r-lg);margin-bottom:24px">
+          <p style="font-size:.82rem;color:var(--t1);font-weight:600;margin-bottom:6px">What happens in the free demo?</p>
+          <div style="font-size:.8rem;color:var(--t2);display:flex;flex-direction:column;gap:4px">
+            <span>Devika understands your background and goals</span>
+            <span>Recommends the exact right course for you</span>
+            <span>Answers all your questions honestly</span>
+            <span>No selling — just helpful honest advice</span>
+          </div>
+        </div>
+        <div class="ci"><div class="ci-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></span></div><a href="mailto:datavika2025@gmail.com">datavika2025@gmail.com</a></div>
+        <div class="ci"><div class="ci-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></span></div><a href="tel:+919048319556">+91 90483 19556</a></div>
+        <div class="ci"><div class="ci-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg></span></div><a href="https://wa.me/919048319556" target="_blank">WhatsApp — fastest response</a></div>
+        <div class="ci"><div class="ci-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/><path stroke-linecap="round" stroke-linejoin="round" d=""/></svg></span></div><a href="https://chat.whatsapp.com/Jvf40wFUenE70ZaHDH6Gwb" target="_blank">Join Free WhatsApp Community</a></div>
+        <div class="ci"><div class="ci-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></span></div><span style="color:var(--t2)">Kerala, India · Online via Zoom</span></div>
+        <div class="ci"><div class="ci-ico"><span style="display:inline-flex;align-items:center;flex-shrink:0;width:22px;height:22px"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253M3.284 14.253A8.959 8.959 0 013 12c0-1.496.364-2.907 1.007-4.155"/></svg></span></div><span style="color:var(--t2)">English + Malayalam · All sessions</span></div>
+      </div>
+      <div class="reveal-r">
+        <div class="form-card">
+          <h3 style="margin-bottom:22px">Book a Free Demo Session</h3>
+          <form id="contact-form" action="https://formspree.io/f/mpqyrvpw" method="POST" novalidate>
+            <div class="fg"><label>Full Name</label><input type="text" name="name" placeholder="Your name" required/></div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="fg"><label>Email</label><input type="email" name="email" placeholder="your@email.com" required/></div>
+              <div class="fg"><label>Phone / WhatsApp</label><input type="tel" name="phone" placeholder="+91 XXXXX XXXXX"/></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="fg"><label>Degree</label>
+                <select name="degree">
+                  <option value="">Select</option>
+                  <option>B.Tech / B.E.</option><option>BCA / BSc CS</option>
+                  <option>MCA / MSc CS</option><option>MBA</option>
+                  <option>Other Graduate</option><option>Still Studying</option>
+                </select>
+              </div>
+              <div class="fg"><label>Experience</label>
+                <select name="experience">
+                  <option value="">Select</option>
+                  <option>Fresher</option><option>0-1 year</option>
+                  <option>1-3 years</option><option>3+ years</option>
+                </select>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="fg"><label>State</label>
+                <select name="state">
+                  <option value="">Select</option>
+                  <option>Kerala</option><option>Tamil Nadu</option>
+                  <option>Karnataka</option><option>Andhra Pradesh</option>
+                  <option>Telangana</option><option>Other</option>
+                </select>
+              </div>
+              <div class="fg"><label>Language Preference</label>
+                <select name="language">
+                  <option>English</option><option>Malayalam</option><option>Both</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg"><label>I am interested in</label>
+              <select name="interest" required>
+                <option value="">Select</option>
+                <option>Free Demo Session</option>
+                <option>Individual Tool Course</option>
+                <option>Data Analyst Track</option>
+                <option>Data Scientist Track</option>
+                <option>Power Pack</option>
+                <option>ML + DL + NLP Bundle</option>
+                <option>1:1 Personalised Sessions</option>
+                <option>Self-Study Mentorship</option>
+                <option>Mock Interview Pack</option>
+                <option>Resume + LinkedIn Pack</option>
+                <option>Complete Placement Bundle</option>
+                <option>Uday Batch Scholarship</option>
+                <option>Business Consulting</option>
+              </select>
+            </div>
+            <div class="fg"><label>Message</label><textarea name="message" placeholder="Your background, goals, or questions..."></textarea></div>
+            <button type="submit" class="btn-submit">Book Free Demo</button>
+          </form>
+          <div class="form-success" id="form-success">
+            <div style="display:flex;justify-content:center;margin-bottom:12px"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#39D353"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+            <h3 style="color:var(--green)">Message Sent!</h3>
+            <p style="margin-top:8px;color:var(--t3)">Devika will respond within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="font-family:var(--font-d);font-size:1.25rem;font-weight:800;color:var(--t1)">Data<span style="color:var(--green)">Vika</span></div>
+        <p class="fp">Find Your Direction in Data. Project-first training and consulting by Devika M — Kerala, India.</p>
+        <div class="fsocs">
+          <a href="https://linkedin.com/in/devika-m" class="fsoc" target="_blank">in</a>
+          <a href="https://wa.me/919048319556" class="fsoc" target="_blank">wa</a>
+          <a href="https://chat.whatsapp.com/Jvf40wFUenE70ZaHDH6Gwb" class="fsoc" target="_blank">c</a>
+          <a href="mailto:datavika2025@gmail.com" class="fsoc">@</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Navigate</h4><ul class="footer-links" id="footer-nav"></ul></div>
+      <div class="footer-col"><h4>Courses</h4><ul class="footer-links">
+        <li><a href="#courses">Individual Tools</a></li>
+        <li><a href="#courses">Data Analyst Track</a></li>
+        <li><a href="#courses">ML + DL + NLP Bundle</a></li>
+        <li><a href="#courses">Power Pack</a></li>
+        <li><a href="#courses">Data Scientist Track</a></li>
+        <li><a href="#uday">Uday Batch Scholarship</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul class="footer-links">
+        <li><a href="mailto:datavika2025@gmail.com">datavika2025@gmail.com</a></li>
+        <li><a href="https://wa.me/919048319556" target="_blank">WhatsApp</a></li>
+        <li><a href="tel:+919048319556">+91 90483 19556</a></li>
+        <li><a href="https://chat.whatsapp.com/Jvf40wFUenE70ZaHDH6Gwb" target="_blank">WhatsApp Community</a></li>
+        <li><a href="#consulting">Business Consulting</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-btm">
+      <p>2026 DataVika. Founded by Devika M · Kerala, India · Find Your Direction in Data.</p>
+      <p>English + Malayalam · Max 15 students per batch</p>
+    </div>
+  </div>
+</footer>
+
+<a id="wa-btn" href="https://wa.me/919048319556?text=Hi+Devika!+I'm+interested+in+DataVika." target="_blank" title="Chat on WhatsApp"><span style="display:inline-flex;align-items:center;justify-content:center"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" ><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg></span></a>
+<button id="chatbot-btn" title="Ask DataVika AI" style="display:inline-flex;align-items:center;justify-content:center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/></svg></button>
+<div id="chatbot-panel">
+  <div class="chat-hd">
+    <div class="chat-hd-ico" style="display:inline-flex;align-items:center;justify-content:center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="22" height="22"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 002.25-2.25V6.75a2.25 2.25 0 00-2.25-2.25H6.75A2.25 2.25 0 004.5 6.75v10.5a2.25 2.25 0 002.25 2.25zm.75-12h9v9h-9v-9z"/></svg></div>
+    <div><div class="chat-hd-name">DataVika Assistant</div><div class="chat-hd-sub">Ask about courses, fees, timings...</div></div>
+    <button class="chat-x" id="chat-x">✕</button>
+  </div>
+  <div class="chat-msgs" id="chat-msgs">
+    <div class="msg bot">Hi! Ask me anything about DataVika — courses, fees, or how to get started!</div>
+  </div>
+  <div class="chat-sugs">
+    <span class="chat-sug">What courses do you offer?</span>
+    <span class="chat-sug">How much does it cost?</span>
+    <span class="chat-sug">Tell me about Uday Batch</span>
+    <span class="chat-sug">Do you offer 1:1 sessions?</span>
+  </div>
+  <div class="chat-inp-row">
+    <input type="text" class="chat-inp" id="chat-inp" placeholder="Type your question..."/>
+    <button class="chat-send" id="chat-send">Send</button>
+  </div>
+</div>
+
+<script src="data/content.js"></script>
+<script src="data/syllabus.js"></script>
+<script src="js/app.js"></script>
+<script src="js/backgrounds.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',()=>{
+  if(typeof initBackgrounds==='function') initBackgrounds();
+
+  // bg-packs hex grid
+  ['bg-packs','bg-consulting'].forEach(id=>{
+    const cv=document.getElementById(id);
+    if(!cv) return;
+    const ctx=cv.getContext('2d');
+    function r(){cv.width=cv.parentElement.offsetWidth;cv.height=cv.parentElement.offsetHeight;}
+    r();window.addEventListener('resize',r,{passive:true});
+    let t=0;
+    function hex(cx,cy,rv){ctx.beginPath();for(let i=0;i<6;i++){const a=Math.PI/180*(60*i-30);i===0?ctx.moveTo(cx+rv*Math.cos(a),cy+rv*Math.sin(a)):ctx.lineTo(cx+rv*Math.cos(a),cy+rv*Math.sin(a));}ctx.closePath();}
+    function draw(){const W=cv.width,H=cv.height;ctx.clearRect(0,0,W,H);const rv=30,w=rv*Math.sqrt(3),h=rv*1.5;let row=0;for(let y=-rv;y<H+rv;y+=h){const xOff=(row%2===0)?0:w/2;for(let x=-w+xOff;x<W+w;x+=w){const p=0.3+0.7*Math.sin(x*0.015+y*0.013+t*0.014);const al=0.015+0.012*p;ctx.strokeStyle=`rgba(57,211,83,${al})`;ctx.lineWidth=0.5;hex(x,y,rv-1);ctx.stroke();}row++;}t++;requestAnimationFrame(draw);}
+    draw();
+  });
+
+  // Rotating sub-headlines
+  const subs=[
+    "For freshers who want their first data job",
+    "For working professionals who want to upskill",
+    "For self-learners who need real direction",
+    "For anyone stuck — skills but no placement",
+    "Taught in English and Malayalam"
+  ];
+  let si=0;
+  const subEl=document.getElementById('rotating-sub');
+  if(subEl){
+    function rotateSub(){
+      subEl.style.opacity='0';
+      setTimeout(()=>{subEl.textContent=subs[si%subs.length];subEl.style.opacity='1';si++;},500);
+    }
+    rotateSub();setInterval(rotateSub,3500);
+  }
+
+  // How it works
+  const hw=document.getElementById('how-steps');
+  if(hw){
+    const steps=[
+      {icon:`<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="32" height="32"><path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z"/></svg>`,n:'01',t:'Free Demo',d:'30-min call with Devika. She understands your goals and recommends the exact right path. No selling, just honest advice.'},
+      {icon:`<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="32" height="32"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>`,n:'02',t:'Your Plan',d:'Custom syllabus, schedule, and pace built around you. Morning, evening, or weekend — your choice.'},
+      {icon:`<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="32" height="32"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>`,n:'03',t:'Real Projects',d:'Every concept taught through a real portfolio-level project. Build work that makes recruiters stop scrolling.'},
+      {icon:`<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="32" height="32"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>`,n:'04',t:'Get Hired',d:'Mock interviews, resume, portfolio — all included in bundles. Leave DataVika with a job-ready profile.'},
+    ];
+    hw.innerHTML=steps.map((s,i)=>`
+      <div class="card reveal d${i+1}" style="text-align:center;padding:28px 20px;position:relative">
+        ${i<3?'<div style="position:absolute;top:50%;right:-12px;z-index:2;font-size:1rem;color:var(--border)">→</div>':''}
+        <div style="font-size:2rem;margin-bottom:12px">${s.icon}</div>
+        <div style="font-family:var(--font-d);font-size:.62rem;font-weight:700;color:var(--green);letter-spacing:.1em;margin-bottom:6px">STEP ${s.n}</div>
+        <div style="font-family:var(--font-d);font-size:.95rem;font-weight:700;color:var(--t1);margin-bottom:8px">${s.t}</div>
+        <p style="font-size:.8rem;color:var(--t2);line-height:1.6">${s.d}</p>
+      </div>`).join('');
+  }
+
+  // builder placement unlock
+  const origUpdate=window.updateSum;
+  const origInit=window.initBuilder;
+});
+</script>
+</body>
+</html>
